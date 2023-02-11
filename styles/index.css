@@ -1,0 +1,21 @@
+/* BODY */
+.body-home-page {
+	display: grid;
+	grid-template-rows: 105px 1fr;
+}
+/* MAIN */
+.content-home {
+	grid-area: 2/1/-1/-1;
+	width: 100%;
+}
+/* IMAGE */
+.Bgnd-HomePage {
+	width: 100%;
+	height: calc(100vh - 105px);
+
+	background-image: url("../images/img-Pages/Home.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}

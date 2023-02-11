@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isabel Tizon Arranz">
+    <meta name="description" content="Main Page for BWM Agency">
+
+
+    <!--Navbar exercice Bike week 6-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--External styles-->
+    <link href="../styles/artists.css" rel="stylesheet">
+    <link href="../styles/contact.css" rel="stylesheet">
+
+    <!--Internal styles-->
+    <style>
+        .important {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+
+    <!--title-->
+    <title>Contact-BWM</title>
+</head>
+
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color: #000;">
+            <a class="navbar-brand" href="#"><img title="BWM Agency Logo" class="img-Logo" src="../images/logo.png"
+                    alt="BWM logo" width="80" height="80"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-home" href="../index.html"><img src="../images/icons/HomePageIcon.png"
+                                alt="Home Page Icon" width="40" height="40"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/artists.html">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/comingSoon.html">Coming soon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/video.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ASIDE SOCIAL MEDIA -->
+    <aside class="container-icons-menu-Social-Media">
+
+        <a class="hover-SocialMedia" href="https://www.instagram.com/"><img class="Icon-Menu-2"
+                src="../images/icons/instagranIcon.png" alt="Instagram Icon"></a>
+
+        <a class="hover-SocialMedia" href="#"><img class="Icon-Menu" src="../images/icons/LinkedInIcon.png"
+                alt="LinkedIn Icon"></a>
+        <a class="hover-SocialMedia" href="https://twitter.com/"><img class="Icon-Menu"
+                src="../images/icons/twiterIcon.png" alt="Twiter Icon"></a>
+        <a class="hover-SocialMedia" href="https://www.facebook.com/"><img class="Icon-Menu-2"
+                src="../images/icons/facebookIcon.png" alt="Facebook Icon"></a>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+    <main class="content content-contact">
+
+        <!-- H1 - IMG HELLO-->
+        <div class="contact">
+
+            <h1 class="p-content">If you have any questions about concerts or anything else, <br />please do not
+                hesitate to contact us!</h1>
+            <div class="flex-hello">
+                <img class="img-hello" src="../images/img-Pages/helloSandwich.png" alt="">
+            </div>
+            <!-- Section Forms Left -->
+
+            <form class="forms-left">
+                <label class="label-contact" for="FirstName">First Name<span class="important">*</span></label>
+                <input id="FirstName" class="box-input" type="text" value="" required>
+
+                <label class="label-contact" for="LastName">Last Name<span class="important">*</span></label>
+                <input id="LastName" class="box-input" type="text" value="" required>
+
+                <label class="label-contact" for="Email">Email<span class="important">*</span></label>
+                <input id="Email" class="box-input" type="text" value="" required>
+
+            </form>
+            <form class="forms-right">
+                <label class="label-contact" for="PhoneNumber">Phone Number<span class="important">*</span></label>
+                <input id="PhoneNumber" class="box-input" type="text" value="" required>
+
+                <label class="label-contact" for="Address">Address<span class="important">*</span></label>
+                <input id="Address" class="box-input" type="text" value="" required>
+
+                <label class="label-contact" for="Birthday">Your Birthday<span class="important">*</span></label>
+                <input id="Birthday" class="box-input" type="text" value="" required>
+            </form>
+
+
+            <!-- Section Text-Area -->
+            <form class="form-text-area">
+                <label class="label-contact" for="box-text-area">Please enter your comment here...</label>
+                <textarea id="box-text-area"></textarea><br />
+            </form>
+
+            <!-- Section Subscrition Right -->
+            <section class="Subscrition">
+                <h3 class="sub-Q"><b>Would you like to received emails detailing offers and events?</b></h3>
+                <div class="Check-Box-Area">
+                    <div class="flex-yes">
+                        <label class="Answer" for="Answer-Yes">Yes</label>
+                        <input id="Answer-Yes" class="Check-Box" type="checkbox" name="Answer-Yes" value="">
+                    </div>
+                    <div class="flex-no">
+                        <label class="Answer" for="Answer-No">No</label>
+                        <input id="Answer-No" class="Check-Box" type="checkbox" name="Answer-Yes" value="">
+                    </div>
+                </div>
+                <div class="flex-Btn-Submit">
+                    <input class="btn-submit" type="submit" value="Submit">
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+    <!-- FOOTER- FLEX -->
+    <footer>
+        <div class="flex-footer">
+            <div class="flex-links-footer">
+                <div class="footer-left">
+                    <a class="link-footer-left" href="../pages/contact.html">Subscription</a><br />
+                    <a class="link-footer-left" href="../pages/contact.html">Contact us</a><br />
+                    <a class="link-footer-left" href="http://www.google.com">Site Map</a><br />
+                </div>
+
+                <div class="footer-right">
+                    <a href="../pages/festivals.html">Festivals</a><br />
+                    <a href="../pages/gigs.html">Gigs</a><br />
+                    <a href="http://www.google.com">Careers</a><br />
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="copyright"><span class="copyright-Icon"><b>&copy;</b></span> 2021 BWM</div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

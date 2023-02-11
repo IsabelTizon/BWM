@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit&family=Mochiy+Pop+P+One&family=Roboto&family=Source+Serif+Pro:ital,wght@1,900&display=swap");
+
+/* -------------- BODY --------------------------*/
+.body-video-page {
+	background-image: url("../images/img-Pages/Bgd.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+/* -------------- MAIN --------------------------*/
+.content-video {
+	margin: auto;
+	width: 100%;
+	max-width: 900px;
+	background-color: #c4c4c4;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* <H1> - <P> - VIDEO FOR EACH ARTIST */
+h1 {
+	font-family: "Anton", sans-serif;
+	font-size: 60px;
+	margin-top: 15%;
+	margin-bottom: 10%;
+}
+
+p {
+	font-family: monospace;
+	width: 93%;
+	max-width: 700px;
+	margin-top: 3%;
+}
+.video {
+	width: 95%;
+	max-width: 700px;
+	margin-bottom: 20%;
+	height: 400px;
+	border-radius: 5px;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.body-video-page {
+		background-image: none;
+	}
+	/* <H1> - <P> - VIDEO FOR EACH ARTIST */
+	h1 {
+		font-size: 40px;
+		margin: 10%;
+	}
+	h2 {
+		margin-top: 10%;
+	}
+
+	.video {
+		height: 200px;
+		border-radius: 5px;
+	}
+}

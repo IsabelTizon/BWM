@@ -1,0 +1,279 @@
+/*-------------------- GRID -------------------*/
+html {
+	width: 100vw;
+}
+.content-gigs {
+	background-color: #e5e5e5;
+	width: 100vw;
+	padding: 5%;
+	height: auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-rows: repeat(2, 200px 1fr 1fr);
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Day 2*/
+.day-1 {
+	grid-area: 1/1/2/-1;
+}
+/* Poster */
+.panel-1 {
+	grid-area: 2/1/3/2;
+}
+/* Information */
+.info-1 {
+	grid-area: 2/2/3/3;
+}
+/* Poster */
+.panel-2 {
+	grid-area: 2/3/3/4;
+}
+/* Information */
+.info-2 {
+	grid-area: 2/4/3/-1;
+}
+/* Poster */
+.panel-3 {
+	grid-area: 3/1/4/2;
+}
+/* Information */
+.info-3 {
+	grid-area: 3/2/4/3;
+}
+/* Poster */
+.panel-4 {
+	grid-area: 3/3/4/4;
+}
+/* Information */
+.info-4 {
+	grid-area: 3/4/4/-1;
+}
+
+/* Day 2*/
+.day-2 {
+	grid-area: 4/1/5/5;
+}
+/* Poster */
+.panel-5 {
+	grid-area: 5/1/6/2;
+}
+/* Information */
+.info-5 {
+	grid-area: 5/2/6/3;
+}
+/* Poster */
+.panel-6 {
+	grid-area: 5/3/6/4;
+}
+/* Information */
+.info-6 {
+	grid-area: 5/4/6/-1;
+}
+/* Poster */
+.panel-7 {
+	grid-area: 6/1/7/2;
+}
+/* Information */
+.info-7 {
+	grid-area: 6/2/7/3;
+}
+/* Poster */
+.panel-8 {
+	grid-area: 6/3/-1/4;
+}
+/* Information */
+.info-8 {
+	grid-area: 6/4/-1/-1;
+}
+
+/*-------------------- STYLES MAIN --------------------*/
+/* ---------------- Day - Grid top--------------*/
+.day {
+	font-size: 60px;
+	color: rgb(145, 16, 16);
+	margin: 20px;
+}
+
+/* Separation days */
+hr {
+	border-color: rgb(145, 16, 16);
+	padding: 20px;
+	width: 90vw;
+	grid-area: 4/1/5/5;
+}
+
+/*---------------- Grid left ---------------*/
+/* Poster */
+.panel {
+	border-radius: 5px;
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+}
+
+/*---------------- Grid Right ---------------*/
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+
+	width: 80%;
+	height: auto;
+
+	margin-bottom: 120px;
+}
+
+/* Icon Map */
+.icon-map {
+	max-width: 25px;
+	max-height: 30px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+a:hover {
+	border-bottom: 0;
+}
+
+/* Submit Button */
+.btn-submit {
+	margin-top: 30px;
+	font-weight: bold;
+	width: 100%;
+	height: auto;
+}
+.btn-submit:hover {
+	background-color: rgb(151, 150, 150);
+	cursor: pointer;
+}
+
+/*
+
+
+
+
+
+
+
+
+----------------------- @media --------------------- */
+@media only screen and (max-width: 600px) {
+	.content-gigs {
+		display: grid;
+		grid-gap: 10px;
+
+		grid-template-rows: 150px repeat(4, 0.5fr 1fr);
+		grid-template-columns: 1fr;
+
+		width: 100%;
+		padding: 5px;
+		height: auto;
+	}
+
+	/*------------ Thu, 21 Oct ----------------*/
+	.day-1 {
+		grid-area: 1/1/2/-1;
+	}
+	/* Poster */
+	.panel-1 {
+		grid-area: 2/1/3/-1;
+	}
+	/* Information */
+	.info-1 {
+		grid-area: 3/1/4/-1;
+	}
+	/* Poster */
+	.panel-2 {
+		grid-area: 4/1/5/-1;
+	}
+	/* Information */
+	.info-2 {
+		grid-area: 5/1/6/-1;
+	}
+	/* Poster */
+	.panel-3 {
+		grid-area: 6/1/7/-1;
+	}
+	/* Information */
+	.info-3 {
+		grid-area: 7/1/8/-1;
+	}
+	/* Poster */
+	.panel-4 {
+		grid-area: 8/1/9/-1;
+	}
+	/* Information */
+	.info-4 {
+		grid-area: 9/1/10/-1;
+	}
+
+	/*------------ Fri, 22 Oct ----------------*/
+	.day-2 {
+		grid-area: 10/1/11/-1;
+	}
+	/* Poster */
+	.panel-5 {
+		grid-area: 11/1/12/-1;
+	}
+	/* Information */
+	.info-5 {
+		grid-area: 12/1/13/-1;
+	}
+	/* Poster */
+	.panel-6 {
+		grid-area: 13/1/14/-1;
+	}
+	/* Information */
+	.info-6 {
+		grid-area: 14/1/15/-1;
+	}
+	/* Poster */
+	.panel-7 {
+		grid-area: 15/1/16/-1;
+	}
+	/* Information */
+	.info-7 {
+		grid-area: 16/1/17/-1;
+	}
+	/* Poster */
+	.panel-8 {
+		grid-area: 17/1/18/-1;
+	}
+	/* Information */
+	.info-8 {
+		grid-area: 18/1/19/-1;
+	}
+
+	/*-------------------- Styles Main --------------------*/
+	/* ---------------- Day - Grid top--------------*/
+	.day {
+		font-size: 40px;
+	}
+	.panel {
+		border-radius: 5px;
+		padding: 15px;
+		margin-bottom: 10px;
+
+		width: 100%;
+		height: auto;
+	}
+	.info {
+		padding: 15px;
+		width: 100%;
+		height: auto;
+	}
+	h3 {
+		width: 100%;
+		height: auto;
+	}
+
+	.btn-submit {
+		margin-top: 20px;
+		width: 100%;
+		height: 50px;
+	}
+	hr {
+		display: none;
+	}
+}
